@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 手机适配 -->
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+</head>
+<body>
+    <div id="game"></div>
+    <div class="head clear">
+        <!-- 得分区 -->
+        <div class="scoreShow left">
+            <span>Score:</span>
+            <span id="score"></span>
+        </div>
+        <!-- 闯关级别 -->
+        <div class="selction right" onclick="getDegree(event)">
+            <a href="#" class="model" value="4">闯关4*4</a>
+            <a href="#" class="model" value="5">闯关5*5</a>
+            <a href="#" class="model" value="6">闯关6*6</a>
+            <a href="#" class="model" value="7">闯关7*7</a>
+            <a href="#" class="model" value="8">闯关8*8</a>
+        </div>
+    </div>
+    <!-- 主战场 -->
+    <div id="panel"></div>
+    <!-- 游戏结束的弹框 -->
+    <div id="gameOver">
+        <h3 id="finalScore"></h3>
+        <a href="#" id="tryAgain" onclick="obj.gameStart()">Try again</a>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
